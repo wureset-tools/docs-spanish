@@ -15,8 +15,6 @@ Para restablecer los valores predeterminados de los componentes de Windows Updat
 
 La herramienta comenzará a restablecer los componentes automáticamente, y el proceso debería completarse en unos minutos.
 
-Once completed, it is recommended to install the latest Windows Update Agent from the following link: [https://support.microsoft.com/en-us/kb/949104](https://support.microsoft.com/en-us/kb/949104).
-
 Después de eso, instale el último agente de Windows Update: [https://support.microsoft.com/es-es/kb/949104](https://support.microsoft.com/es-es/kb/949104).
 
 Finalmente, reinicie su PC para guardar los cambios.
