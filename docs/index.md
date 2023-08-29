@@ -28,8 +28,6 @@ Al ejecutar Reset Windows Update Tool, la herramienta detectará automáticament
 
 En caso de que el sistema operativo no sea compatible con la herramienta, se mostrará un mensaje de error y se cerrará la herramienta.
 
-Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
-
 ## Glosario
 
 <dl>

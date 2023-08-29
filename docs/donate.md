@@ -15,11 +15,11 @@ Los sistemas operativos de Microsoft reciben nuevas actualizaciones mes tras mes
 
 Por lo tanto, para agilizar el proceso de actualización y garantizar que la herramienta esté disponible en varios idiomas, he pedido ayuda a la comunidad para traducirla. El trabajo es considerable, y seguiré colaborando con la comunidad para crear una versión más atractiva en el futuro.
 
-Por ahora, puedes descargar las últimas versiones de la herramienta en el sitio web https://wureset.com/.
+Por ahora, puedes descargar las últimas versiones de la herramienta en el sitio web [https://wureset.com/](https://wureset.com/).
 
 ### Todavía hay que enfrentarse a la realidad
 
-En los últimos meses, nos hemos visto afectados por la fluctuación del dólar y el aumento de los costes de los servicios de dominio y alojamiento. Para hacer frente a esto, tuvimos que migrar a opciones más asequibles, lo que lamentablemente provocó fallos de conexión con nuestro sitio web, https://wureset.com/.
+En los últimos meses, nos hemos visto afectados por la fluctuación del dólar y el aumento de los costes de los servicios de dominio y alojamiento. Para hacer frente a esto, tuvimos que migrar a opciones más asequibles, lo que lamentablemente provocó fallos de conexión con nuestro sitio web, [https://wureset.com/](https://wureset.com/).
 
 Nos complace informar de que ahora disponemos de un servicio estable y esperamos seguir ofreciéndolo durante muchos años. Sin embargo, dependemos de las donaciones para cubrir nuestros gastos y mantener el servicio funcionando sin problemas. Tus contribuciones nos ayudarán mucho a mantener una plataforma fiable y accesible para que los usuarios puedan descargar la herramienta Restablecer Windows Update.
 
