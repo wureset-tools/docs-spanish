@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Manuel Gil" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Solución de problemas - Reset Windows Update Tool</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../assets/css/main.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Soluci\u00f3n de problemas";
+        var mkdocs_page_input_path = "troubleshooting.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Reset Windows Update Tool
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Introducción</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../usage/">Uso</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../diagnostic/">Diagnóstico</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../reset-components/">Restablecer componentes</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Solución de problemas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contenidos">Contenidos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modificar-valores-no-validos-en-el-registro">Modificar valores no válidos en el registro</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#escanear-todos-los-archivos-protegidos-del-sistema">Escanear todos los archivos protegidos del sistema</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#herramienta-de-comandos-dism">Herramienta de comandos DISM</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instalacion-de-actualizaciones">Instalación de actualizaciones</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#soluciones-en-linea">Soluciones en línea</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../donate/">Donar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">Preguntas Más Frecuentes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Reset Windows Update Tool</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Solución de problemas</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wureset-tools/docs-spanish/edit/master/docs/troubleshooting.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="solucion-de-problemas">Solución de problemas</h1>
+<p>Restablecer los componentes de Windows Update es la solución principal para corregir los problemas relacionados con Windows Update. Sin embargo, es importante seguir los pasos necesarios para evitar problemas durante el proceso.</p>
+<blockquote>
+<h3 id="contenidos">Contenidos</h3>
+<p><a href="#modificar-valores-no-validos-en-el-registro">Modificar valores no válidos en el registro</a> <br />
+<a href="#escanear-todos-los-archivos-protegidos-del-sistema">Escanear todos los archivos protegidos del sistema</a> <br />
+<a href="#herramienta-de-comandos-dism">Herramienta de comandos DISM</a> <br />
+<a href="#instalacion-de-actualizaciones">Instalación de actualizaciones</a> <br />
+<a href="#soluciones-en-linea">Soluciones en línea</a></p>
+</blockquote>
+<h2 id="modificar-valores-no-validos-en-el-registro">Modificar valores no válidos en el registro</h2>
+<p>Modificar el registro de forma incorrecta puede causar graves problemas. Por lo tanto, es muy recomendable crear una copia de seguridad del registro antes de realizar cualquier cambio.</p>
+<p>Para crear una copia de seguridad, seleccione la opción "Cambiar valores no válidos en el registro". Esto creará una copia de seguridad del registro en el escritorio de Windows.</p>
+<p>Una vez creada la copia de seguridad, se cambiarán los valores no válidos en el registro, lo que puede solucionar errores como 0x8000FFFF, 0x80240020, 0x80070646 y otros.</p>
+<p>En caso de que se produzca algún problema, puede restaurar el registro seleccionando "Fusionar" en el menú contextual.</p>
+<h2 id="escanear-todos-los-archivos-protegidos-del-sistema">Escanear todos los archivos protegidos del sistema</h2>
+<p>Si estás experimentando problemas con Windows, otra opción a considerar es la herramienta "Escanear todos los archivos protegidos del sistema". Esta herramienta busca daños en los archivos de sistema de Windows y restaura cualquier archivo dañado que encuentre.</p>
+<p>Antes de utilizar esta herramienta, se recomienda hacer una copia de seguridad de los archivos y datos importantes. Una vez que esté listo, simplemente seleccione la opción y espere a que finalice el análisis. Los archivos dañados que se detecten se restaurarán automáticamente.</p>
+<p>Una vez finalizado el análisis, es importante reiniciar el PC para asegurarse de que los cambios se guardan y se aplican correctamente.</p>
+<h2 id="herramienta-de-comandos-dism">Herramienta de comandos DISM</h2>
+<p>DISM.exe es una herramienta de línea de comandos que se puede utilizar para reparar errores de corrupción de Windows. La herramienta Restablecer Windows Update incluye comandos DISM para facilitar el proceso de reparación. Las opciones de reparación con DISM son:</p>
+<ul>
+<li>Escanear la imagen para comprobar si hay corrupción</li>
+<li>Comprobar las corrupciones detectadas</li>
+<li>Reparar la imagen de Windows</li>
+<li>Limpiar los componentes reemplazados</li>
+</ul>
+<p>Para reparar Windows, estas opciones deben seleccionarse en secuencia. Después de seleccionar cada opción, debe aparecer un mensaje de proceso. Tenga en cuenta que la operación del comando puede tardar varios minutos en completarse. Es importante reiniciar el PC después de ejecutar cada comando.</p>
+<p>Si Windows no se puede reparar, es posible que tenga que reinstalar el sistema.</p>
+<h2 id="instalacion-de-actualizaciones">Instalación de actualizaciones</h2>
+<p>Para empezar a instalar actualizaciones, puede acceder a Windows Update seleccionando la opción "Buscar actualizaciones" en el menú Configuración.</p>
+<p>Cuando instale actualizaciones, es mejor instalarlas en lotes de 5 a 20, si es posible. Esto ayuda a minimizar el riesgo de que surjan problemas durante el proceso de instalación.</p>
+<h2 id="soluciones-en-linea">Soluciones en línea</h2>
+<p>La herramienta Restablecer Windows Update puede solucionar algunos errores relacionados con la instalación de actualizaciones, pero puede haber ciertos errores que no se puedan resolver con esta herramienta.</p>
+<p>En tales casos, puede visitar el sitio web de Microsoft y explorar otras soluciones en línea. Simplemente seleccione la opción "Explorar otras soluciones en línea" y será dirigido al sitio web de Microsoft donde podrá encontrar información adicional y soporte para su problema específico.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../reset-components/" class="btn btn-neutral float-left" title="Restablecer componentes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../donate/" class="btn btn-neutral float-right" title="Donar">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wureset-tools/docs-spanish" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../reset-components/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../donate/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

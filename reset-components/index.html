@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Manuel Gil" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Restablecer componentes - Reset Windows Update Tool</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../assets/css/main.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Restablecer componentes";
+        var mkdocs_page_input_path = "reset-components.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Reset Windows Update Tool
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Introducción</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../usage/">Uso</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../diagnostic/">Diagnóstico</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Restablecer componentes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contenidos">Contenidos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#restablecer-los-componentes-de-windows-update">Restablecer los componentes de Windows Update</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#el-servicio-de-actualizacion-de-windows-no-se-pudo-detener">El servicio de actualización de Windows no se pudo detener</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Solución de problemas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../donate/">Donar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">Preguntas Más Frecuentes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Reset Windows Update Tool</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Restablecer componentes</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/wureset-tools/docs-spanish/edit/master/docs/reset-components.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="restablecer-componentes">Restablecer componentes</h1>
+<p>Si experimenta problemas persistentes con Windows Update, puede ser necesario restablecer los componentes de Windows Update a su configuración predeterminada. Esta herramienta está diseñada específicamente para solucionar problemas relacionados con estos componentes.</p>
+<blockquote>
+<h3 id="contenidos">Contenidos</h3>
+<p><a href="#restablecer-los-componentes-de-windows-update">Restablecer los Componentes de Windows Update</a> <br />
+<a href="#el-servicio-de-actualizacion-de-windows-no-se-pudo-detener">El servicio de actualización de Windows no se pudo detener</a></p>
+</blockquote>
+<h2 id="restablecer-los-componentes-de-windows-update">Restablecer los componentes de Windows Update</h2>
+<p>Antes de proceder, es importante crear una copia de seguridad del registro por si algo sale mal durante el proceso.</p>
+<p>Para restablecer los valores predeterminados de los componentes de Windows Update, seleccione la opción "Restablecer componentes de Windows Update". Esto detendrá los servicios de Windows Update y limpiará los componentes, restaurándolos a sus valores iniciales.</p>
+<p>La herramienta comenzará a restablecer los componentes automáticamente, y el proceso debería completarse en unos minutos.</p>
+<p>Después de eso, instale el último agente de Windows Update: <a href="https://support.microsoft.com/es-es/kb/949104">https://support.microsoft.com/es-es/kb/949104</a>.</p>
+<p>Finalmente, reinicie su PC para guardar los cambios.</p>
+<h2 id="el-servicio-de-actualizacion-de-windows-no-se-pudo-detener">El servicio de actualización de Windows no se pudo detener</h2>
+<p>Si el Servicio de Windows Update no se detiene, ejecute esta herramienta en modo seguro.</p>
+<div align="center">
+    <img src="https://hispanic.wureset.com/assets/images/failed.png" alt="failed command">
+</div>
+<p><br /></p>
+<p>Para acceder al Modo Seguro, puedes entrar en el entorno de recuperación de Windows manteniendo pulsada la tecla Mayús mientras haces clic en Reiniciar. Esto te llevará al menú Opciones avanzadas de inicio, donde puedes seleccionar Modo seguro.</p>
+<p>Si sigues experimentando el error, es posible que tu instalación de Windows esté en mal estado y requiera reparación o reinstalación.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../diagnostic/" class="btn btn-neutral float-left" title="Diagnóstico"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../troubleshooting/" class="btn btn-neutral float-right" title="Solución de problemas">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/wureset-tools/docs-spanish" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../diagnostic/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../troubleshooting/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
